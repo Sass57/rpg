@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6b7hvyk1qvy"]
+
+[ext_resource type="Texture2D" uid="uid://dltiwyk3qqclh" path="res://art/TilesetDungeon.png" id="1_35jly"]
+[ext_resource type="Script" uid="uid://bxfso2t6qlolb" path="res://script/Door.cs" id="1_vn8jb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vn8jb"]
+size = Vector2(48.125, 40.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ebxy"]
+size = Vector2(14, 14)
+
+[node name="door" type="Area2D"]
+script = ExtResource("1_vn8jb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_35jly")
+hframes = 12
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_vn8jb")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_6ebxy")
