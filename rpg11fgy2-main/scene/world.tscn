@@ -900,6 +900,49 @@ text = "Üdvözlünk a játékban!
 Célod megszerezni a kulcsokat és meggazdagodni"
 tab_size = 0
 
+[node name="szöveg2" type="Node2D" parent="."]
+z_index = 1
+position = Vector2(523, 553)
+scale = Vector2(0.3, 0.3)
+
+[node name="ColorRect" type="ColorRect" parent="szöveg2"]
+offset_top = 7.0
+offset_right = 230.0
+offset_bottom = 100.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="szöveg2/ColorRect"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 0
+offset_left = 2.0
+offset_top = 7.0
+offset_right = 233.0
+offset_bottom = 96.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Gratulálunk a kincs a tiéd mostmár gazdag vagy :D"
+tab_size = 0
+
+[node name="szöveg3" type="Node2D" parent="."]
+z_index = 1
+position = Vector2(813, 185)
+scale = Vector2(0.2, 0.2)
+
+[node name="ColorRect" type="ColorRect" parent="szöveg3"]
+offset_top = 7.0
+offset_right = 230.0
+offset_bottom = 100.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="szöveg3/ColorRect"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 0
+offset_left = 2.0
+offset_top = 7.0
+offset_right = 233.0
+offset_bottom = 96.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Megtaláltad az első kulcsot
+ez kinyit egy ajtót a pálya elején :)"
+tab_size = 0
+
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
 position = Vector2(86, 48)
