@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu4v7rdoulh7l"]
+
+[ext_resource type="Texture2D" uid="uid://cx62oknsap1oq" path="res://art/Axe.png" id="1_xggx3"]
+[ext_resource type="Script" uid="uid://qe6uhrpau4tu" path="res://scene/axe.cs" id="2_oufio"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ky1y1"]
+size = Vector2(32, 32)
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 255
+collision_mask = 255
+script = ExtResource("2_oufio")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("1_xggx3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ky1y1")

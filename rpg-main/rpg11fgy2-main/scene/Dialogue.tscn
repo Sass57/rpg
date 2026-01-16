@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cw0n7fhefjrjq"]
+
+[node name="Dialogue" type="Node2D"]
+
+[node name="DialogueSystem" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="Control" type="Control" parent="DialogueSystem"]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="DialogueSystem/Control"]
+layout_mode = 0
+offset_top = 7.0
+offset_right = 230.0
+offset_bottom = 100.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogueSystem/Control/ColorRect"]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 230.0
+offset_bottom = 142.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Üdvözlünk a játékban!
+Célod megszerezni a kulcsokat és meggazdagodni"
